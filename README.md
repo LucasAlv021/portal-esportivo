@@ -1,2 +1,8 @@
 # portal-esportivo
 Projeto final
+
+LUCAS ALVES
+RONYERI ALVES
+CAUA COSTA
+DANIEL SILVA
+GUSTAVO
