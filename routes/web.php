@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\SiteController;
+use App\Http\Controllers\ContatoController;
 
 // --- ROTAS PÚBLICAS (Acessíveis a todos) ---
 Route::get('/', [SiteController::class, 'index'])->name('site.index');
@@ -25,6 +26,9 @@ Route::middleware('auth')->group(function () {
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
+
+// Rota para o envio do formulário
+Route::post('/contato/enviar', [ContatoController::class, 'enviar'])->name('contato.enviar');
 
 
 // --- ARQUIVO DE ROTAS DO BREEZE ---
