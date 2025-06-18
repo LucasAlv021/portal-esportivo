@@ -41,7 +41,7 @@ class SiteController extends Controller
             'imagem' => asset('img/noticia-basquete-2.png') // Caminho para sua segunda imagem .png
         ],
         [
-            'titulo' => 'Novo recorde de 3 pontos em uma partida',
+            'titulo' => 'MVP da temporada é consagrado pelo público',
             'fonte' => 'espn.com.br',
             'link' => 'https://www.nba.com/',
             'imagem' => asset('img/noticia-basquete-3.png') // Caminho para sua terceira imagem .png
