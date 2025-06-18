@@ -16,9 +16,9 @@ class SiteController extends Controller
     {
         // Dados de exemplo para as notícias
         $noticias = [
-            ['titulo' => 'Time A vence clássico com gol no final', 'fonte' => 'ge.globo', 'link' => '#', 'imagem' => 'https://placehold.co/800x450/4299e1/ffffff?text=Noticia+1'],
-            ['titulo' => 'Destaque da rodada, jogador B é convocado', 'fonte' => 'espn.com.br', 'link' => '#', 'imagem' => 'https://placehold.co/800x450/48bb78/ffffff?text=Noticia+2'],
-            ['titulo' => 'Análise tática: Como o time C dominou o meio-campo', 'fonte' => 'ge.globo', 'link' => '#', 'imagem' => 'https://placehold.co/800x450/f56565/ffffff?text=Noticia+3'],
+            ['titulo' => 'Flamengo vence clássico com gol no final', 'fonte' => 'ge.globo', 'link' => '#', 'imagem' => 'https://placehold.co/800x450/4299e1/ffffff?text=Noticia+1'],
+            ['titulo' => 'Destaque da rodada, no streaming Disney Plus', 'fonte' => 'espn.com.br', 'link' => '#', 'imagem' => 'https://placehold.co/800x450/48bb78/ffffff?text=Noticia+2'],
+            ['titulo' => 'Análise tática: Como o Flamengo dominou o meio-campo', 'fonte' => 'ge.globo', 'link' => '#', 'imagem' => 'https://placehold.co/800x450/f56565/ffffff?text=Noticia+3'],
         ];
         return view('site.futebol', compact('noticias'));
     }
