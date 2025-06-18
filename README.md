@@ -1,93 +1,106 @@
-# 🏀 Portal Esportivo
+# 🏀 Projeto Final - Portal Esportivo
 
-O Portal Esportivo é um sistema web desenvolvido como projeto final de curso técnico. Ele tem como objetivo oferecer uma plataforma prática e intuitiva para navegação entre esportes, produtos relacionados e formulários de contato. O sistema está estruturado com base no framework Laravel e utiliza tecnologias modernas como Tailwind CSS e Vite para performance e usabilidade.
+**Portal Esportivo** é um sistema web desenvolvido como projeto final do curso técnico em Informática. A aplicação tem como objetivo oferecer uma plataforma interativa para navegação entre esportes, exibição de produtos relacionados e formulário de contato com os administradores.
 
+## 🚀 Funcionalidades
 
-## 👨‍💻 Integrantes do Grupo
+* Navegação por categorias de esportes
+* Visualização de produtos esportivos
+* Formulário de contato integrado
+* Interface responsiva e moderna
 
-- Lucas Alves
-- Ronyeri Alves  
-- Cauã Costa
-- Daniel Silva 
-- Gustavo Oliveira
+## 🧰 Tecnologias Utilizadas
 
+* **Laravel (PHP)**
+* **Tailwind CSS**
+* **Vite**
+* **JavaScript**
 
 ## 📁 Estrutura do Projeto
 
-portal-esportivo/
-├── app/ # Lógica principal do sistema (Models, Controllers)
-├── bootstrap/ # Inicialização do Laravel
-├── config/ # Arquivos de configuração
-├── database/ # Seeders, Migrations, Factories
-├── public/ # Arquivos públicos (imagens, index.php)
-├── resources/ # Views (Blade), CSS (Tailwind), JS
-├── routes/ # Definições de rotas (web.php, api.php)
-├── storage/ # Arquivos gerados (logs, cache, uploads)
-├── tests/ # Testes automatizados (PHPUnit)
-├── .env.example # Exemplo de variáveis de ambiente
-├── README.md # Este arquivo
+* `app/` – Lógica principal da aplicação (Models, Controllers)
+* `routes/` – Definições de rotas (web.php, api.php)
+* `resources/` – Views Blade, estilos (Tailwind), scripts (JS)
+* `database/` – Migrations, Seeders, Factories
+* `config/` – Arquivos de configuração
+* `public/` – Arquivos públicos (imagens, index.php)
+* `storage/` – Arquivos gerados (logs, cache, uploads)
+* `.env.example` – Exemplo das variáveis de ambiente
 
+## 👥 Colaboradores
 
+* Lucas Alves
+* Ronyeri Alves
+* Cauã Costa
+* Daniel Silva
+* Gustavo Oliveira
 
----
-
-## ⚙️ Como executar o projeto
+## ⚙️ Como Executar Localmente
 
 ### 1. Pré-requisitos
 
 Certifique-se de ter instalado:
 
-- [PHP 8.1+](https://www.php.net/)
-- [Composer](https://getcomposer.org/)
-- [Node.js e NPM](https://nodejs.org/)
-- [MySQL](https://www.mysql.com/) ou outro banco de dados compatível
-- [XAMPP/Laragon](https://www.apachefriends.org/pt_br/index.html) (opcional, para ambiente local)
+* [PHP 8.1+](https://www.php.net/)
+* [Composer](https://getcomposer.org/)
+* [Node.js e NPM](https://nodejs.org/)
+* [MySQL](https://www.mysql.com/) ou outro banco compatível
+* [XAMPP/Laragon](https://www.apachefriends.org/pt_br/index.html) (opcional)
 
----
-
-### 2. Instalação
+### 2. Instalação do Projeto
 
 ```bash
 # Clone o repositório
 git clone https://github.com/LucasAlv021/portal-esportivo.git
+
+# Acesse o diretório
 cd portal-esportivo
 
 # Instale as dependências do PHP
 composer install
 
-# Instale as dependências do Node (JS/CSS)
-npm install && npm run dev
+# Instale as dependências do Node
+npm install
 
-# Copie e configure as variáveis de ambiente
+# Compile os assets
+npm run dev
+
+# Copie o arquivo de ambiente
 cp .env.example .env
+
+# Gere a chave da aplicação
 php artisan key:generate
+```
 
+### 3. Configuração do Banco de Dados
 
+1. Crie um banco de dados com o nome `portal_esportivo`
+2. No arquivo `.env`, atualize as credenciais de acesso ao banco:
 
-##3. Banco de Dados
-Crie um banco de dados chamado portal_esportivo.
-
-Configure o arquivo .env com suas credenciais de banco:
-
+```env
 DB_DATABASE=lifesport
 DB_USERNAME=seu_usuario
 DB_PASSWORD=sua_senha
+```
 
+3. Execute as migrações e seeders:
 
-
-Execute as migrações e seeders:
+```bash
 php artisan migrate --seed
+```
 
+### 4. Inicializar o Servidor
 
-
-Executar o servidor
+```bash
 php artisan serve
-💬 Contato
-Caso queira entrar em contato com os desenvolvedores, use o formulário de contato dentro do portal ou envie um e-mail.
+```
 
+A aplicação estará disponível em `http://localhost:8000`.
 
+---
 
+## 💬 Contato
 
-
+Caso queira entrar em contato com os desenvolvedores, utilize o formulário de contato dentro do portal ou envie um e-mail.
 
 
